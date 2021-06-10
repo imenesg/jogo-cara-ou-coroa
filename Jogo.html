@@ -4,59 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="dollar.png" />
+    <link rel="shortcut icon" href="./icon/dollar.png" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
     <title>Cara ou Coroa</title>
-    <style>
-        body{
-            background-color: rgb(87, 87, 248);
-            font: normal 15pt arial;
-        }
-        header{
-            text-align: center;
-            color: white;
-
-        }
-        section{
-            background-color: white;
-            border-radius: 10px;
-            padding: 15px;
-            width: 40%;
-            margin: auto;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
-
-        }
-        #resultado{
-            font: normal 30pt arial;
-            text-align: center;
-
-        }
-        #iniciar{
-            width: 100px;
-            background-color:#FFC83D;
-            text-align: center;
-            padding: 5px;
-            border-radius: 10px;
-            margin: auto;
-            cursor: pointer;
-        }
-        #historico{
-            width: 50px;
-            background-color: white;
-            text-align: center;
-            margin: auto;
-            margin-top: 50px;
-            border-radius: 10px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
-        }
-       
-
-        footer{
-            text-align: center;
-            color: white;
-            font-style: italic;
-        }
-
-    </style>
+    
 </head>
 <body>
     <header>
@@ -72,28 +24,3 @@
     <ol id="historico"></ol>
 </body>
 </html>
-<script>
-    
-    function iniciar(){
-        var contador=0;
-        var caraouCoroa = Math.floor(Math.random() * 2)
-
-        if(caraouCoroa==0){
-            alert(`Jogando...`)
-            document.getElementById("resultado").innerText= "👑"
-            var contador= contador + 1;
-            var resultadoPartida = `👑`;
-        }
-        else{
-            alert(`Jogando...`)
-            document.getElementById("resultado").innerText= "..."
-            document.getElementById("resultado").innerText= "😀"
-            var contador= contador + 1;
-            var resultadoPartida = `😀`;
-        }
-        var historico =  document.getElementById("historico").innerHTML += `<li>${resultadoPartida}</li>` ;
-
-        
-    }
-
-</script>
