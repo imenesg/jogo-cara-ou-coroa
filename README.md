@@ -10,7 +10,7 @@ Um jogo de cara ou coroa feito em HTML , CSS e JavaScript.
     
   <img width="460" height="" src="https://user-images.githubusercontent.com/69609443/135777070-4b5755d1-77b8-4a12-a70c-4873d69e77b5.png">
 </p>
-<hr>
+
  ## Jogue em :https://imenesg.github.io/jogo-cara-ou-coroa/
 
  
