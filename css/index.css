@@ -15,6 +15,9 @@ section{
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
 
+    animation-name: aparecer;
+    animation-duration: 1.5s;
+
 }
 #resultado{
     font: normal 30pt arial;
@@ -45,4 +48,26 @@ footer{
     text-align: center;
     color: white;
     font-style: italic;
+}
+.flipAnimation{
+    animation-name: flip;
+    animation-duration: .5s;
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes flip {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
 }
